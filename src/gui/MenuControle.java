@@ -32,7 +32,7 @@ public class MenuControle implements Initializable {
 	
 	@FXML
 	public void onMenuItemDepartamentosAcao() {
-		System.out.println("onMenuItemDepartamentosAcao");
+		loadView("/gui/Lista de Departamento.fxml");
 	}
 	@FXML
 	public void onMenuItemSobreAcao() {
@@ -45,7 +45,7 @@ public class MenuControle implements Initializable {
 		
 	}
 
-	private void loadView(String absoluteName) {
+	private synchronized void loadView(String absoluteName) {
 		try {
 			FXMLLoader loader = new FXMLLoader(getClass().getResource(absoluteName));
 			VBox newVBox = loader.load();
