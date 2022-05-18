@@ -9,8 +9,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-
-<VBox xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/18">
+<VBox xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.util.ListaControleDepartamentos">
    <children>
       <Label text="Registro de Departamentos">
          <font>
@@ -22,13 +21,13 @@
       </Label>
       <ToolBar prefHeight="40.0" prefWidth="74.0">
         <items>
-          <Button mnemonicParsing="false" text="Novo Cadastro" />
+          <Button fx:id="btnew" mnemonicParsing="false" text="Novo Cadastro" />
         </items>
       </ToolBar>
       <TableView prefHeight="200.0" prefWidth="200.0">
         <columns>
-          <TableColumn prefWidth="109.0" text="Id" />
-          <TableColumn prefWidth="90.0" text="Nome" />
+          <TableColumn fx:id="tabelacolunaid" onEditStart="#onBtnewAcao" prefWidth="109.0" text="Id" />
+          <TableColumn fx:id="tabelacolunanome" onEditStart="#onBtnewAcao" prefWidth="90.0" text="Nome" />
         </columns>
       </TableView>
    </children>

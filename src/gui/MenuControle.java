@@ -59,7 +59,7 @@ public class MenuControle implements Initializable {
 			
 			
 		} catch (IOException e) {
-			Alerts.showAlert("IOException", "Erro ao carregar a página de visualização", e.getMessage(), AlertType.ERROR);
+			Alerts.showAlert("IO Exception", "Erro ao carregar a página de visualização", e.getMessage(), AlertType.ERROR);
 		}
 	
 	}
