@@ -35,11 +35,12 @@ public class MenuControle implements Initializable {
 	
 	@FXML
 	public void onMenuItemDepartamentosAcao() {
-		loadView("/gui/Lista de Departamento.fxml");
+		loadView(" /gui.util/Lista de Departamento.fxml"); 
+		
 	}
 	@FXML
 	public void onMenuItemSobreAcao() {
-		loadView("/gui/Sobre.fxml");
+		loadView(" /gui.util/Sobre.fxml");
 	}
 	
 	
